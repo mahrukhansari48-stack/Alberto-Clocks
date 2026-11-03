@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Collection | Alberto Watches</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet"><script src="../offline/offline.js"></script></head>
+<body data-root="../">
+<div id="site-nav"></div>
+<header class="page-hero"><div class="container text-center"><span class="eyebrow">Collection</span><h1 class="display-4 fw-bold">Our Watches</h1><p class="opacity-75">24 timepieces · find your perfect match</p></div></header>
+<section class="section"><div class="container">
+ <div class="row g-3 mb-4 align-items-center">
+  <div class="col-lg-5"><input id="search" class="form-control" placeholder="Search watches..." aria-label="Search watches"></div>
+  <div class="col-lg-3"><select id="sort" class="form-select" aria-label="Sort"><option value="">Sort by</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="az">Name: A–Z</option></select></div>
+  <div class="col-lg-4 d-flex flex-wrap gap-2 justify-content-lg-end" id="filters">
+   <button class="chip active" data-cat="All">All Watches</button><button class="chip" data-cat="Classic">Classic</button><button class="chip" data-cat="Luxury">Luxury</button><button class="chip" data-cat="Sports">Sports</button><button class="chip" data-cat="Minimalist">Minimalist</button><button class="chip" data-cat="Ladies">Ladies</button><button class="chip" data-cat="Gents">Gents</button></div>
+ </div>
+ <div class="row g-4" id="grid"></div>
+ <p id="none" class="text-center d-none py-5">No watches found. Try another search.</p>
+ <nav aria-label="Pagination"><ul class="pagination justify-content-center mt-5" id="pager"></ul></nav>
+</div></section>
+<div id="site-footer"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script></body></html>
